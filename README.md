@@ -29,3 +29,7 @@ k  = bspline_elem_basis(p, knt, xi, el)
 ```
 
 $$  K[0] = 2(\xi-1)^2 \ \ \ \ \ \  K[1] = 2 (1 - 3 \xi) (\xi-1) \ \ \ \ \ \ K[2] = 4 (\xi-0.5)^2 $$
+
+```
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+```
