@@ -3,13 +3,17 @@ This repository contains the code that returns the B-Spline basis functions in s
 
 It is possible to convert these basis functions equation to latex commands and use in thesis or research papers.
 
+#### Requirements & Dependencies:
+
+In order to try this code, It is necessary to install the Anaconda(Jupyter Notebook). The dependent libraries (NUMPY and SYMPY) are integral packages of it, so no need to install them separately.
+
 ### How to Use:
 
 To demonstrate the working of the  code, degree 2, B-Spline with knot vector {0,0,0,0.5,1,1,1} is considered. B-spline with these properties has 2 parametric spans (elements in FEM/IGA terminology) first one in the range {0,0.5} and other in {0.5,1}. In each element has 3 (degree+1) basis functions 
 
 #### 	Jupyter Version:
 
-##### Element 1:
+##### To get basis functions of Element 1:
 
 ```python
 # Defining the inputs
@@ -23,7 +27,7 @@ k  = bspline_elem_basis(p, knt, xi, el)
 
 ![Element 1](README/ele1.PNG)
 
-##### Element 2: 
+##### To get basis functions of Element 2: 
 
 ```python
 p = 2
