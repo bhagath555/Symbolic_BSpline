@@ -24,7 +24,7 @@ simplify = True				# Simplied expression of the basis functions.
 
 ```python
 elem = 1 # Element 1
-basis  = bspline_elem_basis(p, knot, xi, elem)
+basis  = bspline_elem_basis(p, knot, xi, elem, simplify)
 ```
 
 ![elem1](README/elem1.PNG)
@@ -33,7 +33,7 @@ basis  = bspline_elem_basis(p, knot, xi, elem)
 
 ```python
 elem = 2 # Element 2
-basis  = bspline_elem_basis(p, knt, xi, el)  
+basis  = bspline_elem_basis(p, knt, xi, el, simplify)  
 ```
 
 ![elem2](README/elem2.PNG)
