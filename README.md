@@ -29,7 +29,7 @@ basis  = bspline_elem_basis(p, knot, xi, elem)
 
 ![elem1](README/elem1.PNG)
 
-#### To get basis functions of Element 2, span {0..5,1}: 
+#### To get basis functions of Element 2, span {0.5,1}: 
 
 ```python
 elem = 2 # Element 2
