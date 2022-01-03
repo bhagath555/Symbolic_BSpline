@@ -36,3 +36,7 @@ k  = bspline_elem_basis(p, knt, xi, el)
 
 ![Element 2](README/el2.PNG)
 
+```math
+\xi = \frac{2}{3}
+```
+
