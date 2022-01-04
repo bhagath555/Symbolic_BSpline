@@ -13,17 +13,17 @@ To demonstrate the usage of this tool, degree 2, B-Spline with knot vector {0,0,
 
 ```python
 # Defining the inputs
-p = 2	# Degree
+p = 2				# Degree
 knot = [0,0,0,0.5,1,1,1]	# Knot vector
 xi = symp.Symbol('xi')		# Symbolic variable
-simplify = True		# Simplied expression of the basis functions.
+simplify = True			# Simplied expression of the basis functions.
 # simplify = False		# For expanded format of the basis functions.
 ```
 
 #### To get basis functions of Element 1, span {0,0.5}:
 
 ```python
-elem = 1		# Element 1
+elem = 1			# Element 1
 basis  = bspline_elem_basis(p, knot, xi, elem, simplify)
 ```
 
@@ -32,7 +32,7 @@ basis  = bspline_elem_basis(p, knot, xi, elem, simplify)
 #### To get basis functions of Element 2, span {0.5,1}: 
 
 ```python
-elem = 2 # Element 2
+elem = 2 			# Element 2
 basis  = bspline_elem_basis(p, knt, xi, el, simplify)  
 ```
 
@@ -41,9 +41,9 @@ basis  = bspline_elem_basis(p, knt, xi, el, simplify)
 #### Converting Expressions into LATEX format:
 
 ```python
-print(sympy.latex(basis)) # Prints the latex format of all the basis functions.
+print(sympy.latex(basis))	# Prints the latex format of all the basis functions.
 # OR
-print(sympy.latex(basis[0])) # To get latex format of any one of the basis function.
+print(sympy.latex(basis[0]))	# To get latex format of any one of the basis function.
 ```
 
 This procedure is applied for any other degree and knot vector. 
